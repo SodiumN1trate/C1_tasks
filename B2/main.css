@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+}
+.wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px;
+    grid-template-columns: 3rem 25% 1fr 2fr
+    color: white;
+}
+
+.wrapper div {
+    text-align: center;
+    vertical-align: center;
+    background-color: purple;
+}
