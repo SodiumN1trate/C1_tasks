@@ -1,0 +1,74 @@
+main {
+    display: grid;
+    grid-template-areas: "red green" "blue orange";
+    width: 100px;
+    height: 100px;
+    animation: 2s ease-in-out infinite rotate;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > div {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: relative;
+}
+
+main > div > div {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    animation: .5s ease-in-out infinite slide;
+}
+
+.red-ball {
+    background-color: #F63D3A;
+}
+
+.green-ball {
+    background-color: #19A68C;
+    grid-area: green;
+}
+
+.orange-ball {
+    background-color: #FDA543;
+    grid-area: orange;
+}
+
+.blue-ball {
+    background-color:  #193B48;
+    grid-area: blue;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+    50% {
+        transform: translateY(5px) translateX(5px);
+    }
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+}

@@ -3,14 +3,25 @@ body {
 }
 .wrapper {
     display: grid;
-    gap: 10px;
-    grid-template-rows: 100px;
-    grid-template-columns: 3rem 25% 1fr 2fr
-    color: white;
+
+    gap: 20px;
+    grid-template-areas: "site-title site-title site-title nav-1 nav-2 nav-3" 
+                        "post-title post-title post-title post-title post-title sidebar"
+                        "post-meta main-content main-content main-content main-content sidebar"
+                        "post-meta main-content main-content main-content main-content sidebar"
+                        "post-meta main-content-image main-content-image main-content-image main-content-image ads"
+                        "post-meta main-content-image main-content-image main-content-image main-content-image other-stuffs"
+                        "footer footer footer footer footer footer";
+
 }
 
 .wrapper div {
-    text-align: center;
-    vertical-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: black;
     background-color: purple;
+    padding: 75px;
+    color: white;
+    
 }
