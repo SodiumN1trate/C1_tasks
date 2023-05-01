@@ -3,7 +3,6 @@ body {
 }
 .wrapper {
     display: grid;
-
     gap: 20px;
     grid-template-areas: "site-title site-title site-title nav-1 nav-2 nav-3" 
                         "post-title post-title post-title post-title post-title sidebar"
@@ -16,12 +15,6 @@ body {
 }
 
 .wrapper div {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    color: black;
-    background-color: purple;
     padding: 75px;
-    color: white;
-    
+    border: 1px solid black;
 }
