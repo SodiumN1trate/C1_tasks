@@ -27,3 +27,13 @@ body {
 .form__input:focus {
     outline: 3px solid #000000;
 }
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#field_general {
+    background-color: red;
+}

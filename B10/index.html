@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <label>
+      Border radius
+      <input type="range" min="0" value="0" max="100" id="radius">
+    </label>
+    <label>
+      Offset-x
+      <input type="range" min="0" value="0" max="100" id="x">
+    </label>
+    <label>
+      Offset-y
+      <input type="range" min="0" value="0" max="100" id="y">
+    </label>
+    <label>
+     blur radius
+      <input type="range" min="0" value="0" max="100" id="blur-radius">
+    </label>
+  </div>
+</body>
+</html>
+
+<script>
+  const radius = document.getElementById('radius')
+
+  const x = document.getElementById('x')
+  const y = document.getElementById('y')
+  const blurRadius = document.getElementById('blur-radius')
+
+  const box = document.getElementById('box')
+  radius.addEventListener('input', (e) => {
+    box.style.borderRadius = e.target.value + 'px'
+  })
+
+  x.addEventListener('input', (e) => {
+    box.style.boxShadow = `${e.target.value}px ${y.value}px ${blurRadius.value}px black`
+  })
+  y.addEventListener('input', (e) => {
+    box.style.boxShadow = `${x.value}px ${e.target.value}px ${blurRadius.value}px black`
+  })
+  blurRadius.addEventListener('input', (e) => {
+    box.style.boxShadow = `${x.value}px ${y.value}px ${e.target.value}px black`
+  })
+</script>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #box {
+        background-color: red;
+        width: 400px;
+        height: 400px;
+    }
+</style>

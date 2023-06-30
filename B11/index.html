@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="track">
+    <img style="position: absolute" src="track.svg">
+    <div class="car"></div>
+  </div>
+</body>
+</html>
+
+<style>
+    .track {
+        position: relative;
+    }
+
+    .car {
+        position: absolute;
+        background-color: red;
+        height: 20px;
+        width: 40px;
+        animation: drive 3000ms infinite linear;
+        offset-path: path("M175 75L125 125C97.3858 152.614 52.6142 152.614 25 125V125C-2.61424 97.3857 -2.61424 52.6142 25 25V25C52.6142 -2.61425 97.3858 -2.61424 125 25L225 125C252.614 152.614 297.386 152.614 325 125V125C352.614 97.3858 352.614 52.6142 325 25V25C297.386 -2.61424 252.614 -2.61424 225 25L175 75Z");
+    }
+
+    @keyframes drive {
+        from {
+            offset-distance: 0%;
+        }
+        to {
+            offset-distance: 100%;
+        }
+    }
+</style>
