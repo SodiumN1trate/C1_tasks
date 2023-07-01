@@ -1,0 +1,42 @@
+body {
+    background-color: #FCE019;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 100px;
+}
+
+.box {
+    border: 1px solid black;
+    /* box-shadow: 5px 5px white; */
+    background-color: transparent;
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.box::after {
+    content: '';
+    width: 102%;
+    height: 102%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(3px, 3px);
+    z-index: -30;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content > .box {
+    width: 300px;
+}

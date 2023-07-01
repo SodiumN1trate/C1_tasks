@@ -1,0 +1,63 @@
+.digit {
+    position: absolute;
+    height: 300px;
+    width: 170px;
+    position: relative;
+}
+
+.vertical {
+    position: absolute;
+    height: 120px;
+    width: 20px;
+    background-color: #FFE5E5;
+}
+
+.horizontal {
+    position: absolute;
+    height: 20px;
+    width: 130px;
+    background-color: #FFE5E5;
+    left: 20px;
+    right: 20px;
+}
+
+.top-vertical {
+    top: 20px;
+}
+
+.bottom-vertical {
+    bottom: 20px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.center {
+    top: 140px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.line {
+    border-radius: 5px;;
+}
+
+.active {
+    background-color: #DB4C4C !important;
+}
+
+#container {
+    font-size: 100px;
+    color: #DB4C4C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}

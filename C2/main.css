@@ -1,0 +1,86 @@
+body {
+    background-color: #09061B;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    height: 100px;
+    transform: scale(0.5);
+}
+
+.stick {
+    height: 30px;
+    width: 15px;
+    background-color: #49FFF3;
+}
+
+#first {
+    animation: first 1s ease-in-out infinite;
+}
+
+#second {
+    animation: second 1s ease-in-out infinite;
+}
+
+#third {
+    animation: third 1s ease-in-out infinite;
+}
+
+#fourth {
+    animation: fourth 1s ease-in-out infinite;
+}
+
+@keyframes first {
+    0% {
+        height: 30px;
+    }
+    30% {
+        height: 100px;
+    }
+    70% {
+        height: 30px;
+    }
+}
+
+@keyframes second {
+    25% {
+        height: 30px;
+    }
+    40% {
+        height: 100px;
+    }
+    80% {
+        height: 30px;
+    }
+}
+
+@keyframes third {
+    50% {
+        height: 30px;
+    }
+    65% {
+        height: 100px;
+    }
+    90% {
+        height: 30px;
+    }
+}
+
+@keyframes fourth {
+    70% {
+        height: 30px;
+    }
+    85% {
+        height: 100px;
+    }
+    100% {
+        height: 30px;
+    }
+}
